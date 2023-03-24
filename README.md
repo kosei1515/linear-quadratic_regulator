@@ -50,14 +50,10 @@ $\bm{x}=[p,\theta,\dot{p},\dot{\theta}]^T, \bm{u}=[F]$
 
 Non-linear state equation is defined as:
 
-$\bm{\dot{x}}=f(\bm{x},\bm{u})=\left[
-\begin{matrix} 
-\dot{p} \\
+$\bm{\dot{x}}=f(\bm{x},\bm{u})=\left[\begin{matrix} \dot{p} \\
 \dot{\theta} \\
 \frac{-lm_2 \sin(\theta)\dot{\theta}\cos(\theta)}{m_1+m_2\sin^2(\theta)} \\
-\frac{g(m_1+m_2)\sin\theta-(lm_2\sin(\theta)\dot\theta^2-F)\cos(\theta)}{l(m_1+m_2\sin^2(\theta))}
-\end{matrix}  
-\right].$
+\frac{g(m_1+m_2)\sin\theta-(lm_2\sin(\theta)\dot\theta^2-F)\cos(\theta)}{l(m_1+m_2\sin^2(\theta))}\end{matrix}\right].$
 
 Linialized state equation is given by:
 
