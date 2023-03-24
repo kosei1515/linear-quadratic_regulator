@@ -11,12 +11,12 @@ This repository includes path following prrograms usig Linear-quadratic Regulato
 $ git clone git@github.com:kosei1515/linear-quadratic_regulator.git
 ```
 
-2. Go to path where this repository is cloned.
+2. Go to the path where this repository is cloned.
 ```
 $ cd path/to/linear-quadratic_regulator
 ```
 
-3. Test environment. 
+3. Test your environment. 
 ```
 $  python -m pytest tests
 ```
