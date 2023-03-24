@@ -5,6 +5,75 @@ This repository includes path following prrograms usig Linear-quadratic Regulato
 - https://qiita.com/taka_horibe/items/5d053cdaaf4c886d27b5
 - https://qiita.com/trgkpc/items/8210927d5b035912a153
 
+# Install
+1. Clone this repository. 
+```
+$ git clone git@github.com:kosei1515/linear-quadratic_regulator.git
+```
+
+2. Go to path where this repository is cloned.
+```
+$ cd path/to/linear-quadratic_regulator
+```
+
+3. Test environment. 
+```
+$  python -m pytest tests
+```
+
+
+# Usage
+Try example.
+```
+$ python ./linear_quadratic_regulator/inverted_pendulum.py ./config/inverted_pendulum.yaml
+```
+
+You can see outputs like these.
+
+Move of the inverted pendulum.
+
+![](docs/image/inverted_pendulum.gif)
+
+History of the input $\boldsymbol{u}$.
+
+![](docs/image/Figure_2.png)
+
+History of the state $\boldsymbol{x}$
+
+![](docs/image/Figure_1.png)
+
+
+If you use your own config file, put this command.
+```
+$ python ./linear_quadratic_regulator/inverted_pendulum.py <your config file path>
+```
+
+
+# Parameters
+See [the config example yaml](config/inverted_pendulum.yaml).
+## Phisical parameters.
+|Name|Description|Default|
+|--------------|--------------|---------------|
+|`phisical_parameters.g`|Gravitational acceleration.|`9.80665`|
+|`phisical_parameters.m1`|The Mass of the cart.|`1.0`|
+|`phisical_parameters.m2`|The Mass of the point|`0.1`|
+|`phisical_parameters.l`|The Length of the stick between the cart and the point.|`0.8`|
+|`phisical_parameters.external_force`|The external force to the cart.|`0`|
+
+## LQR parameters.
+|Name|Description|Default|
+|--------------|--------------|---------------|
+|`lqr.Q`|Q matrix for LQR|`[[1.0, 0.0, 0.0, 0.0], [0.0, 800.0, 0.0, 0.0], [0.0, 0.0, 10.0, 0.0], [0.0, 0.0, 0.0, 20.0]]`|
+|`lqr.R`|R matrix for LQR|`[[0.44332]]`|
+
+## Parameters for simulation
+|Name|Description|Default|
+|--------------|--------------|---------------|
+|`simulation.terminal_time`|The time length of the simulation [s].|`20`|
+|`simulation.discrete_time`|The discrete time length of the simulation [s].|`0.05`|
+|`simulation.x0`|The initial value of the state $\boldsymbol{x}$ .|`[0.0, -0.1, 0.0, 0.0]`|
+
+
 # Inverted Pendulum
 ## Reference
 https://qiita.com/acela86/items/83e34d35bd1f4f98e794
