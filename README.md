@@ -61,21 +61,13 @@ $\bm{\dot{x}}=f(\bm{x},\bm{u})=\left[
 
 Linialized state equation is given by:
 
-$\dot{x}=A\bm{x}+B\dot{u}=\left[
-\begin{matrix}
+$\dot{x}=A\bm{x}+B\dot{u}=\left[\begin{matrix}
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & \frac{gm_2}{m_1} & 0 & 0 \\
 0 & \frac{g(m_1+m_2)}{lm_1} & 0 & 0 \\
-\end{matrix}
-\right
-]\bm{x}
-+\left[
-\begin{matrix}
-0 \\
+\end{matrix}\right]\bm{x}+\left[\begin{matrix}0 \\
 0 \\ 
 \frac{1}{m_1} \\
-\frac{1}{lm_1}
-\end{matrix}
-\right]\bm{u}.$
+\frac{1}{lm_1}\end{matrix}\right]\bm{u}.$
 
