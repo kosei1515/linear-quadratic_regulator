@@ -46,7 +46,7 @@ l\ddot\theta-g\sin\theta=\ddot x\cos\theta.$
 ## State equation
 State vector and Input vector.
 
-$\mathbm{x}=[p,\theta,\dot{p},\dot{\theta}]^T, \bm{u}=[F]$
+$\boldsymbol{x}=[p,\theta,\dot{p},\dot{\theta}]^T, \boldsymbol{u}=[F]$
 
 Non-linear state equation is defined as:
 
