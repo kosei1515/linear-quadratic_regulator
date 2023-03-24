@@ -14,9 +14,7 @@ https://qiita.com/acela86/items/83e34d35bd1f4f98e794
 ## EOM
 Using Lagrangian equations,
 
-$
-L=\frac{1}{2}m_1 v_1^2 + \frac{1}{2} m_2v_2^2 - m_2gl\cos{\theta},
-$
+$L=\frac{1}{2}m_1 v_1^2 + \frac{1}{2} m_2v_2^2 - m_2gl\cos{\theta},$
 
 where $v_1$ is the velocity of the cart and $v_2$ is the velocity of the point mass $m
 _2$.
